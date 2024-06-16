@@ -1,0 +1,160 @@
+html[data-theme="light"] .card {
+    background: #ffffff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #dee8f3;
+    background-size: cover; /* Масштабирование изображения так, чтобы оно покрывало весь контейнер */
+    background-position: center; /* Позиция изображения по центру контейнера */
+    background-repeat: no-repeat; /* Запрет повторения фонового изображения */
+
+}
+
+/* Стили для контейнера карточки */
+.card {
+    overflow: hidden;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    transform: translate(-50%, -50%);
+    transition: transform 300ms, box-shadow 300ms;
+    box-shadow: 5px 10px 10px rgba(19, 36, 189, 0.2);
+    max-width: 500px;
+    text-align: center;
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 600px;
+        height: 850px;
+        border-top-left-radius: 60%;
+        border-top-right-radius: 45%;
+        border-bottom-left-radius: 35%;
+        border-bottom-right-radius: 40%;
+        z-index: -1;
+    }
+
+    &::before {
+        left: 40%;
+        bottom: -130%;
+        background-color: rgba(23, 255, 193, 0.15);
+        animation: wawes 6s infinite linear;
+    }
+
+    &::after {
+        left: 35%;
+        bottom: -125%;
+        background-color: rgba(52, 89, 203, 0.2);
+        animation: wawes 7s infinite;
+    }
+
+    input {
+        font-family: 'Asap', sans-serif;
+        display: block;
+        border-radius: 5px;
+        font-size: 15px;
+        background: white;
+        width: 100%;
+        border: 0;
+        padding: 2px 2px;
+        margin: 10px -5px;
+    }
+
+}
+
+p {
+    color: #000000;
+    font-size:15px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+
+}
+/* Анимация */
+@keyframes wawes {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 300px;
+
+}
+label input[type="text"],
+label input[type="password"] {
+    padding: 10px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Ширина элемента ввода равна 100% от родительского контейнера */
+    max-width: 300px; /* Максимальная ширина элемента ввода */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для сообщения об ошибке поля выбора файла */
+.error {
+    color: #901717; /* Красный цвет текста */
+}
+
+
+
+/* Медиа-запрос для адаптивности */
+@media screen and (max-width: 768px) {
+    label input[type="text"],
+    label input[type="password"] {
+        max-width: none; /* Убираем ограничение максимальной ширины */
+        
+    }
+    /* Дополнительные стили для элементов формы при уменьшении экрана */
+    button {
+        font-size: 16px; /* Уменьшаем размер кнопки */
+        padding: 8px 16px; /* Уменьшаем отступы кнопки */
+    }
+
+    .card {
+        width: 90%; /* Уменьшаем ширину карточки */
+        max-width: 400px; /* Максимальная ширина карточки */
+    }
+h2{
+    font-size: 15px;
+}
+}

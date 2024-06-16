@@ -1,0 +1,1212 @@
+.bi {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+/*
+ * Sidebar
+ */
+
+@media (min-width: 768px) {
+  .sidebar .offcanvas-lg {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+  }
+  .navbar-search {
+    display: block;
+  }
+}
+
+.sidebar .nav-link {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sidebar .nav-link.active {
+  color: #2427dc;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+/*
+ * Navbar
+ */
+
+
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+}
+
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+
+/** КНОПКА ДОБАВЛЕНИЯ*/
+
+
+.btnContactSubmit
+{
+  width: auto;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+
+}
+.btnContactSubmit:hover{
+  background-color: #1783f7;
+}
+
+/* ОШИБКА */
+.notification {
+  position: fixed; /* Фиксированное позиционирование относительно вьюпорта */
+  top: 50%; /* Позиционирование по вертикали */
+  left: 50%; /* Позиционирование по горизонтали */
+  transform: translate(-50%, -50%); /* Сдвигаем уведомление для центрирования */
+  padding: 20px;
+  margin: 0; /* Убираем внешний отступ */
+  border-radius: 5px;
+  color: #ffffff;
+  z-index: 1000; /* Убедитесь, что уведомление находится поверх других элементов */
+  text-align: center;
+  width: auto;
+  max-width: 80%; /* Максимальная ширина уведомления */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Немного тени для лучшей видимости на разных фонах */
+}
+
+.success {
+  background-color: #4CAF50; /* Зеленый */
+}
+
+.error {
+  background-color: #F44336; /* Красный */
+}
+
+/* СКРОЛЛ */
+.scroll{ 
+  border: 1px solid #e4e4e4; /* Тонкая серая граница */
+  width: auto;
+  height: 300px;
+  overflow-y: scroll; /* Включение вертикального скролла */
+  border-radius: 6px; /* Скругленные углы для более мягкого вида */
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 2px; /* Ширина полосы прокрутки */
+}
+
+.scroll::-webkit-scrollbar-track {
+  border-radius: 1px; /* Скругление углов дорожки */
+}
+
+@media screen and (max-width: 900px) {
+  .scroll {
+   width: auto; /* Уменьшенный размер шрифта для маленьких экранов */
+  }
+
+}
+
+
+
+@media screen and (max-width: 256px) {
+  .button-check {
+    display: flex;
+   flex-direction: column; /* Уменьшенный размер шрифта для маленьких экранов */
+  }
+
+}
+
+/* Блоки */
+.card-img-top-wrapper {
+  width: 100%;
+  height: 225px; /* Задайте нужную высоту */
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; /* Опционально - добавьте внутренний отступ */
+  word-break: break-word; /* Добавляем перенос слов */
+}
+
+.text {
+  color: white; /* Цвет текста */
+  font-size: 20px; /* Размер шрифта */
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+/* ЧАТ*/
+
+.chat-area header{
+  display: flex;
+  align-items: center;
+  padding: 18px 30px;
+}
+.chat-area header .back-icon{
+  font-size: 18px;
+  color: #333;
+}
+
+
+.chat-area header img{
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+}
+
+.chat-area header span{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.chat-box{
+  height: 400px;
+  overflow-y: auto ;
+  background: #f7f7f7;
+  padding: 10px 30px 20px 30px;
+  box-shadow: inset 0 32px 32px -32px rgba(0 0 0 / 5%),
+              inset 0 32px 32px -32px rgba(0 0 0 / 5%);
+}
+.chat-box .chat {
+  margin: 15px 0;
+}
+.chat-box .chat p{
+  word-wrap: break-word;
+  padding: 8px 16px;
+  box-shadow: 0 0 32px rgba(0 0 0 / 8%),
+              0 16px 16px -16px rgb(0 0 0/10%);
+}
+.chat-box .outgoing{
+  display: flex;
+}
+.outgoing .details{
+  margin-left: auto;
+  max-width: calc(100% - 130px);
+}
+.outgoing .details p{
+  background: #333;
+  color: #fff;
+  border-radius: 18px 18px 0 18px;
+}
+.chat-box .incoming{
+  display: flex;
+  align-items: flex-end;
+}
+.chat-box .incoming img{
+  height: 35px;
+  width: 35px;
+
+}
+.incoming .details{
+  margin-left: 10px;
+  margin-right: auto;
+  max-width: calc(100% - 130px);
+}
+.incoming .details p{
+  background: #fff;
+  color: #333;
+  border-radius: 18px 18px 18px 0;
+}
+
+.chat-area .typing-area{
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.typing-area input{
+  height: 45px;
+  width: calc(100% - 58px);
+  font-size: 17px;
+  border: 1px solid #ccc;
+  padding: 0 13px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.typing-area button{
+  width: 55px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: #fff;
+  font-size: 19px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+/* КАРТОЧКА ПОЛЬЗОВАТЕЛЯ*/
+.wrapper{
+  background: #fff;
+  width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+              0 32px 64px -48px rgba(0, 0, 0, 0.5);
+              
+}
+
+.modal-container2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Выше всех остальных элементов */
+}
+.modal-container3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  z-index: 9999; /* Выше всех остальных элементов */
+}
+.users{
+  padding: 25px 30px;
+}
+
+.users header,
+.users-list a{
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e1;
+}
+.wrapper img{
+  object-fit: cover;
+  border-radius: 50%;
+}
+:is(.users, .users-list) .content{
+  display: flex;
+  align-items: center;
+}
+
+.users header .content img{
+  height: 50px;
+  width: 50px;
+}
+
+:is(.users, .users-list) .details{
+  color: #000000;
+  margin-left: 15px;
+}
+
+:is(.users, .users-list) .details span{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.users header .logout{
+  color: #fff;
+  font-size: 17px;
+  padding: 7px 15px;
+  background: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  
+}
+
+.users .search{
+  margin: 20px 0;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.users .search .text{
+font-size: 18px;
+}
+
+.users .search input{
+  position: absolute;
+  height: 42px;
+  width: calc(100% - 74px);
+  border: 1px solid #ccc;
+  padding: 0 13px;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.users .search button{
+  width: 47px;
+  height: 42px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #333;
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 0 5px 5px 0;
+}
+
+.users-list{
+max-height: 350px;
+overflow-y: auto;
+}
+
+:is(.users-list, .chat-box)::-webkit-scrollbar{
+  width: 0px;
+}
+.users-list a{
+  margin-bottom: 15px;
+  page-break-after: 10px;
+  padding-right: 15px;
+  border-bottom-color: #f1f1f1 ;
+}
+.users-list a:last-child{
+  border: none;
+  margin-bottom: 0px;
+}
+
+.users-list a .content img{
+  height: 40px;
+  width: 40px;
+
+}
+
+.users-list a .content p{
+  color: #67676a;
+}
+.status-dot .fa-circle {
+  color: grey; /* Серый цвет по умолчанию */
+}
+
+.status-dot .fa-circle.online {
+  color: green; /* Зеленый цвет для активных пользователей */
+}
+
+.status-dot .fa-circle.offline {
+  color: grey; /* Серый цвет для неактивных пользователей */
+}
+
+/* Загрузка */
+.loader {
+  background: radial-gradient(#ffffff, #ffffff);
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+}
+
+.loader-inner {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+
+.loader-line-wrap {
+  animation: 
+  spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+;
+  box-sizing: border-box;
+  height: 50px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform-origin: 50% 100%;
+  width: 100px;
+}
+.loader-line {
+  border: 4px solid transparent;
+  border-radius: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+  border-color: hsl(0, 80%, 60%);
+  height: 90px;
+  width: 90px;
+  top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+  border-color: hsl(60, 80%, 60%);
+  height: 76px;
+  width: 76px;
+  top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+  border-color: hsl(120, 80%, 60%);
+  height: 62px;
+  width: 62px;
+  top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+  border-color: hsl(180, 80%, 60%);
+  height: 48px;
+  width: 48px;
+  top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+  border-color: hsl(240, 80%, 60%);
+  height: 34px;
+  width: 34px;
+  top: 35px;
+}
+
+@keyframes spin {
+  0%, 15% {
+  transform: rotate(0);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+
+
+
+
+
+
+
+
+/* Карточка пользователя */
+
+.card1 {
+  width: 350px;
+  background-color: #efefef;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.image img {
+  transition: all 0.5s
+}
+
+.card:hover .image img {
+  transform: scale(1.5)
+}
+
+
+
+.name {
+  font-size: 22px;
+  font-weight: bold
+}
+
+.idd {
+  font-size: 14px;
+  font-weight: 600
+}
+
+.idd1 {
+  font-size: 12px
+}
+
+.number {
+  font-size: 22px;
+  font-weight: bold
+}
+
+.follow {
+  font-size: 12px;
+  font-weight: 500;
+  color: #444444
+}
+
+.btn1 {
+  height: 40px;
+  width: 150px;
+  border: none;
+  background-color: #000;
+  color: #aeaeae;
+  font-size: 15px
+}
+
+.text span {
+  font-size: 13px;
+  color: #545454;
+  font-weight: 500
+}
+
+.icons i {
+  font-size: 19px
+}
+
+hr .new1 {
+  border: 1px solid
+}
+
+.join {
+  font-size: 14px;
+  color: #a0a0a0;
+  font-weight: bold
+}
+
+.date {
+  background-color: #ccc
+}
+
+
+
+
+/* Карточка комментариев */
+
+.no-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+
+.row.justify-content-end {
+  display: flex;
+  flex-direction: column; /* Теперь блоки будут выстраиваться столбиком */
+  align-items: flex-end; /* Чтобы блоки выравнивались по правому краю */
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  margin-right: 1rem; /* Отрицательный отступ справа */
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+
+
+.blog-card a {
+  color: inherit;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.blog-card a:hover {
+  color: #438aee;
+}
+
+.blog-card:hover .photo {
+  transform: scale(1.3) rotate(3deg);
+  
+}
+
+.blog-card .meta {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5a7bd6;
+}
+
+.blog-card .photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s;
+}
+
+.blog-card .details,
+.blog-card .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-card .details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  transition: left 0.2s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.blog-card .details a {
+  text-decoration: dotted underline;
+}
+
+.blog-card .details ul li {
+  display: inline-block;
+}
+
+.blog-card .details .author:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f007";
+}
+
+.blog-card .details .date:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f133";
+}
+
+.blog-card .details .tags ul:before {
+  font-family: FontAwesome;
+  content: "\f02b";
+  margin-right: 10px;
+}
+
+.blog-card .details .tags li {
+  margin-right: 2px;
+}
+
+.blog-card .details .tags li:first-child {
+  margin-left: -4px;
+}
+
+.blog-card .description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.blog-card .description h1,
+.blog-card .description h2 {
+  font-family: Poppins, sans-serif;
+}
+
+.blog-card .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.blog-card .description h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+
+.blog-card .description .read-more {
+  text-align: right;
+}
+
+.blog-card .description .read-more a {
+  color: #5ad67d;
+  display: inline-block;
+  position: relative;
+}
+
+.blog-card .description .read-more a:after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  transition: margin 0.3s, opacity 0.3s;
+}
+
+.blog-card .description .read-more a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+
+.blog-card p {
+  position: relative;
+  margin: 1rem 0 0;
+}
+
+.blog-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+
+.blog-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #092e92;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+
+.blog-card:hover .details {
+  left: 0%;
+}
+
+@media (min-width: 640px) {
+  .blog-card {
+    flex-direction: row;
+    max-width: 700px;
+  }
+  
+  .blog-card .meta {
+    flex-basis: 40%;
+    height: auto;
+    background-color: #3a549a;
+  }
+  
+  .blog-card .description {
+    flex-basis: 60%;
+  }
+  
+  .blog-card .description:before {
+    transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .blog-card.alt {
+    flex-direction: row-reverse;
+  }
+  
+  .blog-card.alt .description:before {
+    left: inherit;
+    right: -10px;
+    transform: skew(3deg);
+  }
+  
+  .blog-card.alt .details {
+    padding-left: 25px;
+  }
+}
+
+
+
+
+/* Комментарии */
+
+aside ul {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow-y: scroll;
+  height: 690px;
+  
+}
+
+aside li {
+  padding: 10px 0;
+}
+
+aside li:hover {
+  background-color: #5e616a;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+
+aside li div {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+aside li h2 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+aside li h3 {
+  font-size: 12px;
+  color: #7e818a;
+  font-weight: normal;
+}
+
+#chat {
+  padding-left: 0; /* Убираем отступ у ul */
+  margin: 0; /* Убираем внешний отступ у ul */
+  list-style-type: none; /* Убираем маркеры списка у ul */
+}
+
+#chat li {
+  padding: 10px 30px;
+}
+
+#chat h2, #chat h3 {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+#chat h3 {
+  color: #bbb;
+}
+
+#chat .entete {
+  margin-bottom: 5px;
+}
+
+/* Стили для блока комментариев */
+#chat .message {
+  padding: 5px;
+  color: #fff;
+  line-height: 25px;
+  width: 50%; /* Задаем начальную ширину блока комментария */
+  display: inline-block;
+  text-align: left;
+  border-radius: 5px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Медиа-запрос для адаптивного изменения ширины блока комментария */
+@media screen and (max-width: 768px) {
+  #chat .message {
+    width: 100%; /* При ширине экрана менее 768px блок комментария будет занимать всю доступную ширину */
+  }
+}
+
+#chat .you .message {
+  background-color: #333535;
+}
+
+#chat .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+}
+
+#chat .you .triangle {
+  border-color: transparent transparent #333535 transparent;
+  margin-left: 15px;
+}
+
+main footer {
+  height: 155px;
+  padding: 20px 30px 10px 20px;
+}
+
+main footer textarea {
+  resize: none;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 80px;
+  border-radius: 3px;
+  padding: 20px;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+
+main footer textarea::placeholder {
+  color: #ddd;
+}
+
+main footer img {
+  height: 30px;
+  cursor: pointer;
+}
+
+main footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6fbced;
+  vertical-align: top;
+  margin-left: 333px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.avatar {
+  width: 40px; /* Ширина аватарки */
+  height: 40px; /* Высота аватарки */
+  border-radius: 50%; /* Скругленные углы для создания круглой формы */
+  margin-right: 10px; /* Отступ справа */
+  object-fit: cover; /* Обеспечивает правильное отображение изображения внутри заданных размеров */
+  display: block; /* Убедитесь, что изображение ведет себя как блок */
+}
+
+
+
+.hr-dashed {
+	margin: 20px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 2px dashed #bcbcbe;
+}
+
+
+
+.comment-icon.like:hover i {
+  color: rgb(234, 159, 80); /* Замените на желаемый цвет */
+  /* Дополнительные стили */
+}
+
+.info-like-icon:hover i {
+  color: rgb(234, 159, 80); /* Замените на желаемый цвет */
+  /* Дополнительные стили */
+}
+
+
+
+
+.comment-section {
+  display: flex;
+  justify-content: space-between; /* Разделяем элементы по сторонам */
+  align-items: center; /* Выравнивание по вертикали */
+  padding: 10px;
+}
+
+.comment-actions {
+  display: flex;
+  align-items: center;
+}
+
+.comment-delete {
+  margin-left: auto; /* Располагаем кнопку удаления справа */
+}
+
+.delete-comment {
+  background: none;
+  border: none;
+  color: #ffffff; /* Цвет иконки корзины */
+  cursor: pointer;
+}
+
+.delete-comment i {
+  font-size: 1.2em; /* Размер иконки корзины */
+}
+
+.comment-icon.like,
+.comment-count {
+  margin-right: 10px; /* Отступ между элементами */
+}
+
+/* Дополнительные стили для переноса текста */
+#chat .message {
+  word-wrap: break-word;
+}
+
+/* При наведении меняем цвет иконки */
+.comment-icon.like:hover i,
+.delete-comment:hover i {
+  color: rgb(234, 159, 80); /* Замените на желаемый цвет */
+}
+
+
+
+/* Стиль для модального окна коммента */
+.modal {
+  display: none; /* Скрыть модальное окно по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1000; /* Поверх других элементов */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Включить прокрутку, если необходимо */
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Центрировать модальное окно */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Ширина модального окна */
+  max-width: 500px; /* Максимальная ширина модального окна */
+  border-radius: 10px; /* Скругленные углы */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Тень для модального окна */
+  position: relative; /* Для позиционирования крестика */
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Размещаем в правом верхнем углу */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Стили для контейнера модального окна */
+.custom-modal {
+  display: none; /* По умолчанию скрываем модальное окно */
+  position: fixed; /* Фиксированное положение */
+  z-index: 1000; /* Положение над другими элементами */
+  left: 0;
+  top: 0;
+  width: 100%; /* Занимает всю ширину экрана */
+  height: 100%; /* Занимает всю высоту экрана */
+  overflow: auto; /* Добавляет прокрутку, если содержимое больше окна */
+  background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный черный фон */
+}
+
+/* Стили для контента модального окна */
+.custom-modal-content {
+  background-color: #fefefe; /* Белый фон */
+  margin: 15% auto; /* Располагаем по центру экрана */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Ширина контента */
+  max-width: 600px; /* Максимальная ширина */
+  border-radius: 10px; /* Скругление углов */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Тень */
+  position: relative; /* Позиционирование относительно родителя */
+}
+
+/* Стили для кнопки закрытия */
+.custom-modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.custom-modal-close:hover,
+.custom-modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
